@@ -1,7 +1,7 @@
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# terminal chess
+# task manager
  > Your author list below should include links to all members GitHub (remove existing author).
  
  > Authors: [Nathan Do](https://github.com/NathanTDO)
@@ -21,16 +21,16 @@
 ## Project Description
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
-    This project is interesting to us because we all enjoy playing chess and it seems like a fun challenge to code it.
+    Time management is a common issue for college students so it is important to have an organized timeline when dealing with school, work, and other life events.
 
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
-    We plan to do this project in C++ using github to coordinate and using ascii images to make the pieces.
+    We plan to do this project in C++ using github to coordinate and use .txt files to save and import dates and events.
 
  > * What will be the input/output of your project?
-    The input of the the project will be the user typing in what move to make in standard chess notation. The output will be an error message if the input was not valid. If the input is valid, the output will be a chess board with the updated move.
+    The output of the project will be in a chalendar format in the terminal. There will be menu options and the user will be able to select an option where they can input different tasks.
 
  > * What are the features that the project provides?
-    Post game replay of the entire game after someone has won. Players will also be able to undo moves. Additionally, players will be able to chat with each other and give reactions after a move was made.
+    Task categories such as school, chores, fun, family, etc. The ability to see the whole month, how many days have tasks, and how busy the days will be. Tasks will have specific times and dates associated with them to aid in organization.
 
  > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
  > 
