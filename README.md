@@ -42,7 +42,7 @@ The Navigation diagram first portrays a calendar of a specific date provided. Th
 ### Screen Layouts
 Include the layout of each of your screens. The layout should describe the screen’s major components such as menus and prompts for user inputs, expected output, and buttons (if applicable). Explain what is on the layout, and the purpose of each menu item, button, etc. If many screens share the same layout, start by describing the general layout and then list the screens that will be using that layout and the differences between each of them.
 
-Main menu screen: 
+Main menu screen:
 ![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/94928e92-fe65-41f5-9e1b-2c9e3b3f9178)
 
 View Screen (Displays calendar with options to change tasks for a given day): 
