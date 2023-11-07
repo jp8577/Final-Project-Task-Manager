@@ -42,6 +42,21 @@ The Navigation diagram first portrays a calendar of a specific date provided. Th
 ### Screen Layouts
 Include the layout of each of your screens. The layout should describe the screen’s major components such as menus and prompts for user inputs, expected output, and buttons (if applicable). Explain what is on the layout, and the purpose of each menu item, button, etc. If many screens share the same layout, start by describing the general layout and then list the screens that will be using that layout and the differences between each of them.
 
+Main menu screen: 
+![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/94928e92-fe65-41f5-9e1b-2c9e3b3f9178)
+
+View Screen (Displays calendar with options to change tasks for a given day): 
+![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/2a7a0867-caf0-4db6-bb5c-baa4464d9e24)
+
+Edit Screen (Prompts user for edits to chosen tasks): 
+![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/387ad405-cb42-471d-9472-c9dfeb63c591)
+
+Add Screen (Prompts user for a new task to add): 
+![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/530f8172-d15c-4ba6-84bd-8e9b35b32b42)
+
+Delete Screen (Prompts user for a task to delete): 
+![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/28a93e0c-9498-4425-a499-ce7f597543e0)
+
 ## Class Diagram
 Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail so that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
 
