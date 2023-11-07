@@ -65,7 +65,9 @@ Delete Screen (Prompts user for a task to delete):
 ## Class Diagram
 Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail so that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
 
- 
+ ![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/61930673/691ff3b7-5e96-4d2a-8c7e-a5288378c786)
+Through the class diagram, we are able to work from the bottom up as certain classes are utilized in the more general classes. Within the Time class, it is only necessary to have the hour and minute variable to keep track of the time and utilize accessors and mutators to be able to change or access these variables. Within the task class, we utilize the time class to create a start and end time for a certain event, and is utilized more within the methods to access the times. The task class is utilized in the day class through an array that lists the tasks for that day. Finally, the month class utilizes the day class within the array of days that pertain to the number of days in the month.
+
 ## Phase III
 You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on Zoom and should be conducted by Wednesday of week 8.
  
