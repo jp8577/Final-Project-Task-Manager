@@ -59,6 +59,13 @@ You will need to schedule a check-in for the second scrum meeting with the same 
  <img width="785" alt="image" src="https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/146979512/71c91b1d-0fa3-4df5-b64b-90029d4c20b7">
  Updated UML based on the feedback received from the TA.
 
+○ What SOLID principle(s) did you apply?
+Single Responsibilty Principle
+○ How did you apply it? i.e. describe the change.
+The print functions for the Day, Month, Calendar, Task, and Time classes were placed into their own Print class in order to split the responsibilities of managing and outputting data. 
+○ How did this change help you write better code?
+It helped minimize confusion around the role of each class and made our code cleaner and more concise.
+
 BEFORE the meeting you should do the following:
 * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
 * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
