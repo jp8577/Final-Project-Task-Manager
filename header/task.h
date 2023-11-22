@@ -8,14 +8,15 @@ using namespace std;
 
 class Task {
 private:
-    Time start_time;
-    Time end_time;
+    Time startTime;
+    Time endTime;
     string category;
     string location;
+    string decription;
     int priority;
 
 public:
-    Task(Time _start, Time _end, string _catagory, string _location, int _priority);
+    Task(Time _start, Time _end, string _catagory, string _location, string _decription, int _priority);
 
 };
 
