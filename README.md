@@ -59,6 +59,8 @@ Through the class diagram, we are able to work from the bottom up as certain cla
 
 Updated UML based on the feedback received from the TA.
 
+1)
+
 ○ What SOLID principle(s) did you apply?
 
 Single Responsibilty Principle
