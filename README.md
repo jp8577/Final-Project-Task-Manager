@@ -68,6 +68,16 @@ The print functions for the Day, Month, Calendar, Task, and Time classes were pl
 ○ How did this change help you write better code?
 It helped minimize confusion around the role of each class and made our code cleaner and more concise.
 
+2)
+○ What SOLID principle(s) did you apply?
+Liskov's Substituation Principle (LSP)
+
+○ How did you apply it? i.e. describe the change.
+Since classes that inherit from a base class should behave like the base class, each subclass should not have its own unqiue print function. Instead, they should all inherit from one base Print class. 
+
+○ How did this change help you write better code?
+It helped get rid of redundancy since a subclass would not have to inherit a print function from a base class that it would not implement. 
+
 BEFORE the meeting you should do the following:
 * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
 * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
