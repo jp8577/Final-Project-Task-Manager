@@ -63,28 +63,28 @@ Updated UML based on the feedback received from the TA.
 
 ○ What SOLID principle(s) did you apply?
 
-Single Responsibilty Principle
+We applied the Single Responsibilty Principle, where a class should be responsible for one and only one purpose. 
 
 ○ How did you apply it? i.e. describe the change.
 
-The print functions for the Day, Month, Calendar, Task, and Time classes were placed into their own Print class in order to split the responsibilities of managing and outputting data. 
+The print functions for the Day, Month, Calendar, Task, and Time classes were placed into their own Print class in order to split the responsibilities of managing and outputting data. This way, classes were not managing data AND printing that data.  
 
 ○ How did this change help you write better code?
 
-It helped minimize confusion around the role of each class and made our code cleaner and more concise.
+It helped minimize confusion around the roles and responsibilities of each class and made our code cleaner and more concise.
 
 2)
 ○ What SOLID principle(s) did you apply?
 
-Liskov's Substituation Principle (LSP)
+We applied the Open-Closed Principle, where new functionality can be added without changing existing functions. 
 
 ○ How did you apply it? i.e. describe the change.
 
-Since classes that inherit from a base class should behave like the base class, each subclass should not have its own unqiue print function. Instead, they should all inherit from one base Print class. 
+We added functions to check the number of days in a month, as well as checking the first day of a month in order to keep track of the day of the week. We did this without modifying existing functions.
 
 ○ How did this change help you write better code?
 
-It helped get rid of redundancy since a subclass would not have to inherit a print function from a base class that it would not implement. 
+This allowed us to add new functionality to our classes without having to modify the code we already had. 
  
 ## Final deliverable
 All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
