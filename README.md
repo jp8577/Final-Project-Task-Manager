@@ -58,7 +58,7 @@ Through the class diagram, we are able to work from the bottom up as certain cla
 You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on Zoom and should be conducted by Wednesday of week 8.
 <img width="800" alt="image" src="https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/146979512/33c835f0-c8e1-4a7e-964b-af985de2c175">
 
- Updated UML based on the feedback received from the TA.
+ This is the updated UML based on the feedback received from the TA. Through the class diagram, we are able to work from the bottom up as certain classes are utilized in the more general classes. Within the Time class, it is only necessary to have the hour, minute, and pm variables to keep track of the time and utilize accessors and mutators to be able to change or access these variables. Within the task class, we utilize the time class to create a start and end time for a certain event, and is utilized more within the methods to access the times. The task class is utilized in the day class through an array that lists the tasks for that day. Finally, the month class utilizes the day class within the array of days that pertain to the number of days in the month. We also have print class whose sole purpose is to print all of the displays.
 
 ○ What SOLID principle(s) did you apply?
 Single Responsibilty Principle
