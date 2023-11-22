@@ -8,8 +8,10 @@ class Day {
         Task[] tasks;
         int color;
         string name;
+        void checkTimeConflict(Time T);
+
     public:
-        void createTask();
+        void createTask(Time start, Time end, string description, string cat, string location, int prio);
         void printTasks();
         void findColor();
         void printMenu(int taskNum);
