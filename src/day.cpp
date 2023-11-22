@@ -16,7 +16,7 @@ Day::Day(Task[] t, int c, string n)
  }
 void Day::createTask(Time start, Time end, string description, string cat, string location, int prio)
 {
-    Task newTask = Task(start, end, description, cat, location, prio);
+    Task newTask = new Task(start, end, description, cat, location, prio);
     checkTimeConflict(newTask);
 
 }
