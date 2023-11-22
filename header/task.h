@@ -12,11 +12,11 @@ private:
     Time endTime;
     string category;
     string location;
-    string decription;
+    string description;
     int priority;
 
 public:
-    Task(Time _start, Time _end, string _catagory, string _location, string _decription, int _priority);
+    Task(Time _start, Time _end, string _catagory, string _location, string _description, int _priority);
 
 };
 
