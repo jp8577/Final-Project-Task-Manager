@@ -61,8 +61,10 @@ You will need to schedule a check-in for the second scrum meeting with the same 
 
 ○ What SOLID principle(s) did you apply?
 Single Responsibilty Principle
+
 ○ How did you apply it? i.e. describe the change.
 The print functions for the Day, Month, Calendar, Task, and Time classes were placed into their own Print class in order to split the responsibilities of managing and outputting data. 
+
 ○ How did this change help you write better code?
 It helped minimize confusion around the role of each class and made our code cleaner and more concise.
 
