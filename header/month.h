@@ -6,11 +6,14 @@
 class Month {
     private:
         string month;
+        int month_num;
         int year;
         int numDays;
-        Day[] days;
+        Day[32] days;
 
-        int checkDaysInMonth(int month_num);
+        int checkDaysInMonth();
+        int checkFirstDay();
+        bool isLeap();
 
     public:
         Month(string month_name, int _year);
