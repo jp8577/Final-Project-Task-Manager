@@ -1,11 +1,10 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
-project(calendarTests)
+project(taskManagerTests)
 
 ADD_SUBDIRECTORY(googletest)
 
-ADD_EXECUTABLE(dayTest
-    test/dayTest.cpp
-    src/day.cpp
+ADD_EXECUTABLE(test
+    test/test.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

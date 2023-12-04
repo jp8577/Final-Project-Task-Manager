@@ -55,46 +55,36 @@ Delete Screen (Prompts user for a task to delete):
 Through the class diagram, we are able to work from the bottom up as certain classes are utilized in the more general classes. Within the Time class, it is only necessary to have the hour and minute variable to keep track of the time and utilize accessors and mutators to be able to change or access these variables. Within the task class, we utilize the time class to create a start and end time for a certain event, and is utilized more within the methods to access the times. The task class is utilized in the day class through an array that lists the tasks for that day. Finally, the month class utilizes the day class within the array of days that pertain to the number of days in the month.
 
 ## Phase III
-You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on Zoom and should be conducted by Wednesday of week 8.
 <img width="653" alt="image" src="https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/146979512/51b51bc0-cb8e-48b9-9911-3c9083ad57ee">
- Updated UML based on the feedback received from the TA.
+
+Updated UML based on the feedback received from the TA.
+
+1)
 
 ○ What SOLID principle(s) did you apply?
-Single Responsibilty Principle
+
+We applied the Single Responsibilty Principle, where a class should be responsible for one and only one purpose. 
 
 ○ How did you apply it? i.e. describe the change.
-The print functions for the Day, Month, Calendar, Task, and Time classes were placed into their own Print class in order to split the responsibilities of managing and outputting data. 
+
+The print functions for the Day, Month, Calendar, Task, and Time classes were placed into their own Print class in order to split the responsibilities of managing and outputting data. This way, classes were not managing data AND printing that data.  
 
 ○ How did this change help you write better code?
-It helped minimize confusion around the role of each class and made our code cleaner and more concise.
+
+It helped minimize confusion around the roles and responsibilities of each class and made our code cleaner and more concise.
 
 2)
 ○ What SOLID principle(s) did you apply?
-Liskov's Substituation Principle (LSP)
+
+We applied the Open-Closed Principle, where new functionality can be added without changing existing functions. 
 
 ○ How did you apply it? i.e. describe the change.
-Since classes that inherit from a base class should behave like the base class, each subclass should not have its own unqiue print function. Instead, they should all inherit from one base Print class. 
+
+We added functions to check the number of days in a month, as well as checking the first day of a month in order to keep track of the day of the week. We did this without modifying existing functions.
 
 ○ How did this change help you write better code?
-It helped get rid of redundancy since a subclass would not have to inherit a print function from a base class that it would not implement. 
 
-BEFORE the meeting you should do the following:
-* Update your class diagram from Phase II to include any feedback you received from your TA/grader.
-* Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
-* A new class diagram incorporating your changes after considering the SOLID principles.
-* For each update in your class diagram, you must explain in 3-4 sentences:
-* What SOLID principle(s) did you apply?
-* How did you apply it? i.e. describe the change.
-* How did this change help you write better code?
-* Perform a new sprint plan like you did in Phase II.
-* You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
- 
-During the meeting with your reader you will discuss: 
-* How effective your last sprint was (each member should talk about what they did)
-* Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
-* Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
-* What tasks you are planning for this next sprint.
-
+This allowed us to add new functionality to our classes without having to modify the code we already had. 
  
 ## Final deliverable
 All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
