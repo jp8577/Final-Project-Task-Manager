@@ -3,22 +3,22 @@
 #include <iostream>
 using namespace std;
 
-void printDay(Calendar cal) {
+void Print::printDay(Calendar cal) {
 
 }
 
-void printMonth(Calendar cal) {
+void Print::printMonth(Calendar cal) {
 
 }
 
-void printCalendar(Calendar cal) {
+void Print::printCalendar(Calendar cal) {
 
 }
 
-void printTask(Calendar cal) {
+void Print::printTask(Calendar cal) {
 
 }
 
-void printTime(Calendar cal) {
+void Print::printTime(Calendar cal) {
 
 }

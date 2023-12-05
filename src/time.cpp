@@ -47,7 +47,7 @@ int Time::getMins() {
     return minutes;
 }
 
-int Time::getPm() {
+bool Time::getPm() {
     return pm;
 }
 
@@ -55,6 +55,6 @@ bool Time::isValidHours(int hour) {
     return (hour >= 1 && hour <= 12);
 }
 
-bool TIme::isValidMins(int min) {
+bool Time::isValidMins(int min) {
     return (min >= 0 && min < 60);
 }

@@ -72,19 +72,6 @@ The print functions for the Day, Month, Calendar, Task, and Time classes were pl
 ○ How did this change help you write better code?
 
 It helped minimize confusion around the roles and responsibilities of each class and made our code cleaner and more concise.
-
-2)
-○ What SOLID principle(s) did you apply?
-
-We applied the Open-Closed Principle, where new functionality can be added without changing existing functions. 
-
-○ How did you apply it? i.e. describe the change.
-
-We added functions to check the number of days in a month, as well as checking the first day of a month in order to keep track of the day of the week. We did this without modifying existing functions.
-
-○ How did this change help you write better code?
-
-This allowed us to add new functionality to our classes without having to modify the code we already had. 
  
 ## Final deliverable
 All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
