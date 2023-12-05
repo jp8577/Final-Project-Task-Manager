@@ -1,24 +1,19 @@
 #include "../header/calendar.h"
+#include "../header/time.h"
+#include "../header/print.h"
 #include <string>
 #include <iostream>
 using namespace std;
 
-void Print::printDay(Calendar cal) {
+Print::Print() {
 
 }
 
-void Print::printMonth(Calendar cal) {
-
-}
-
-void Print::printCalendar(Calendar cal) {
-
-}
-
-void Print::printTask(Calendar cal) {
-
-}
-
-void Print::printTime(Calendar cal) {
-
+void Print::printTime(Time* clock) {
+    cout << clock->getHours() << ":" << clock->getMins();
+    if (!clock->getPm()) {
+        cout << "am";
+    } else {
+        cout << "pm";
+    }
 }
