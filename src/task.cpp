@@ -1,14 +1,12 @@
 #include "../header/task.h"
-
-
 #include <string>
 #include <iostream>
 using namespace std;
 
-Task::Task(Time *start, Time *end, string _catagory, string _location, string _description, int _priority) {
+Task::Task(Time *start, Time *end, string _category, string _location, string _description, int _priority) {
     startTime = start;
     endTime = end;
-    category = _catagory;
+    category = _category;
     location = _location;
     description = _description;
     priority = _priority;
