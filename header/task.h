@@ -8,16 +8,21 @@ using namespace std;
 
 class Task {
 private:
-    Time startTime;
-    Time endTime;
+    Time *startTime;
+    Time *endTime;
     string category;
     string location;
     string description;
     int priority;
 
 public:
-    Task(Time _start, Time _end, string _catagory, string _location, string _description, int _priority);
-
+    Task(Time *start, Time *end, string _catagory, string _location, string _description, int _priority);
+    Time getStartTime();
+    Time getEndTime();
+    string getCategory();
+    string getLocation();
+    string getDescription();
+    int getPriority();
 };
 
 #endif

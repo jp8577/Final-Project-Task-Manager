@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
+#include "../src/task.cpp"
 #include "../src/time.cpp"
-// #include "../header/task.h"
 // #include "../header/print.h"
 // #include "../header/month.h"
 // #include "../header/day.h"
@@ -12,24 +12,49 @@ int main(int argc, char **argv) {
   return RUN_ALL_TESTS();
 }
 
-TEST(TimeTests, timeConstructor) {
-    Time *newTime = new Time(4,39,true);
-    ASSERT_EQ(newTime->getMins(), 39);
+TEST(TaskTests, taskConstructor1) {
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task(startTime, endTime, "math", "school", "class", 1);
+    ASSERT_EQ(newTask->getStartTime().getHours(),4);
 }
 
-TEST(TimeTests, setHours) {
-    Time *newTime = new Time(4,39,true);
-    newTime->setHours(6);
-    ASSERT_EQ(newTime->getHours(), 6);
+TEST(TaskTests, taskConstructor2) {
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task(startTime, endTime, "math", "school", "class", 1);
+    EXPECT_EQ(newTask->getEndTime().getHours(),5);
 }
 
-TEST(TimeTests, getPM) {
-    Time *newTime = new Time(4,39,true);
-    EXPECT_TRUE(newTime->getPm());
+TEST(TaskTests, taskConstructor3) {
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task(startTime, endTime, "math", "school", "class", 1);
+    EXPECT_EQ(newTask->getCategory(), "math");
+}
+TEST(TaskTests, taskConstructor4) {
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task(startTime, endTime, "math", "school", "class", 1);
+    EXPECT_EQ(newTask->getLocation(), "school");
+}
+TEST(TaskTests, taskConstructor5) {
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task(startTime, endTime, "math", "school", "class", 1);
+    EXPECT_EQ(newTask->getDescription(), "class");
 }
 
-TEST(TimeTests, setPM) {
-    Time *newTime = new Time(4,39,false);
-    newTime->setPm(true);
-    EXPECT_TRUE(newTime->getPm());
+TEST(TaskTests, taskConstructor6) {
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task(startTime, endTime, "math", "school", "class", 1);
+    EXPECT_EQ(newTask->getPriority(), 1);
+}
+
+TEST(TaskTests, failedTaskConstructor) {
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task(startTime, endTime, "math", "school", "class", 1);
+    EXPECT_EQ(newTask->getPriority(), 4);
 }
