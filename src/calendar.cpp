@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-void Calendar::getInput(string input) {
+void Calendar::getInput(char input) {
 
 }
 
