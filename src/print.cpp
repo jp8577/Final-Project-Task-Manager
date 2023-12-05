@@ -5,10 +5,6 @@
 #include <iostream>
 using namespace std;
 
-
-void Print::printDay(Calendar cal) {
-    
-
 Print::Print() {
 
 }
