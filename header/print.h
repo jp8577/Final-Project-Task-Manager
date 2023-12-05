@@ -8,7 +8,7 @@ class Print {
         void printDay(Calendar cal);
         void printMonth(Calendar cal); 
         void printCalendar(Calendar cal); 
-        void printTask(Calendar cal); 
+        void printTask(Task* taskPtr);
         void printTime(Time* clock); 
 };
 
