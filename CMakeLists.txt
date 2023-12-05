@@ -9,7 +9,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/lib")
 ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(test
-    test/test.cpp
+    test/taskTest.cpp
 )
 
 ADD_EXECUTABLE(main

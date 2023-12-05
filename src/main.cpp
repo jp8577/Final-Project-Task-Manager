@@ -1,0 +1,6 @@
+#include "calendar.cpp"
+#include "day.cpp"
+#include "month.cpp"
+#include "print.cpp"
+#include "task.cpp"
+#include "time.cpp"
