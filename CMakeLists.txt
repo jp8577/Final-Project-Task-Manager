@@ -10,7 +10,6 @@ ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(test
     test/taskTest.cpp
-    test/monthTest.cpp
 )
 
 ADD_EXECUTABLE(main

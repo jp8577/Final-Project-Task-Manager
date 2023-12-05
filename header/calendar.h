@@ -5,7 +5,7 @@
 
 class Calendar {
     private:
-        //Month[] months; 
+        Month[] months; 
 
     public:
         void getInput(char input); 
