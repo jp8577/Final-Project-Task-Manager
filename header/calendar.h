@@ -8,7 +8,7 @@ class Calendar {
         Month[] months; 
 
     public:
-        void getInput(string input); 
+        void getInput(char input); 
         void viewMode();
         void editMode(); 
 };
