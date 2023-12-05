@@ -58,3 +58,21 @@ bool Time::isValidHours(int hour) {
 bool Time::isValidMins(int min) {
     return (min >= 0 && min < 60);
 }
+
+void Time::addMin() {
+    minutes++;
+    if (minutes == 60) {
+        minutes = 0;
+        hours++;
+        if (hours == 12) {
+            // toggle the pm bool
+            if (!pm) {
+                pm = true;
+            } else {
+                pm = false;
+            }
+        } else if (hours == 13) {
+            hours = 1;
+        }
+    }
+}

@@ -21,6 +21,7 @@ public:
     int getHours();
     int getMins();
     bool getPm();
+    void addMin();
 };
 
 #endif
