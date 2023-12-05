@@ -58,3 +58,24 @@ TEST(TaskTests, failedTaskConstructor) {
     Task *newTask = new Task(startTime, endTime, "math", "school", "class", 1);
     EXPECT_EQ(newTask->getPriority(), 4);
 }
+
+TEST(TimeTests, addMin) {
+    Time *newTime = new Time(4, 30, true);
+    newTime->addMin();
+    EXPECT_EQ(newTime->getMins(), 31);
+}
+
+TEST(TimeTests, addMinsto59) {
+    Time *newTime = new Time(4, 59, true);
+    newTime->addMin();
+    EXPECT_EQ(newTime->getHours(), 5);
+    EXPECT_EQ(newTime->getMins(), 0);
+}
+
+TEST(TimeTests, addMinsToFlipToPM) {
+    Time *newTime = new Time(11, 59, false);
+    newTime->addMin();
+    EXPECT_EQ(newTime->getHours(), 12);
+    EXPECT_EQ(newTime->getMins(), 0);
+    EXPECT_TRUE(newTime->getPm());
+}
