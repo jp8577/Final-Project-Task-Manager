@@ -29,7 +29,7 @@ Month::Month(string month_name, int _year) {
     month = month_name;
     year = _year;
     numDays = checkDaysInMonth();
-    days[numDays + 1] = null;
+    days = new Day[numDays];
     string dayNames[7] = {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
     int dayOfWeekIterator = checkFirstDay();
     for (int i = 0; i < numDays + 1; i++) {
