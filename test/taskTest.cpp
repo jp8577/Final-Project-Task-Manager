@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 #include "../header/task.h"
-#include "../src/main.cpp"
+#include "../header/time.h"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
