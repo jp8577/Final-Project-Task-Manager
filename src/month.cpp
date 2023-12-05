@@ -1,4 +1,5 @@
 #include "../header/day.h"
+#include "../header/month.h"
 
 Month::Month(string month_name, int _year) {
     if (month_name == "January") {
@@ -44,7 +45,7 @@ Month::Month(string month_name, int _year) {
 int Month::checkDaysInMonth() {
     // jan march may july aug oct dec
     if (month == "January" || month == "March" || month == "May" || month == "July" 
-    || month_num == "August" || month == "October" || month == "December") {
+    || month == "August" || month == "October" || month == "December") {
         return 31;
 
     // april june sept nov

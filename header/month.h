@@ -1,15 +1,16 @@
-#include "task.h"
-#include <iostream>
-#include <string>
 #ifndef MONTH_H
 #define MONTH_H
+
+#include <iostream>
+#include <string>
+#include "../header/day.h"
 class Month {
     private:
         string month;
         int month_num;
         int year;
         int numDays;
-        Day[] days;
+        Day* days;
 
         int checkDaysInMonth();
         int checkFirstDay();
