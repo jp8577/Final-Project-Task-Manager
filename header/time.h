@@ -22,6 +22,7 @@ public:
     int getMins();
     bool getPm();
     void addMin();
+    string getTime();
 };
 
 #endif
