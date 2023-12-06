@@ -3,11 +3,10 @@
 #include <iostream>
 using namespace std;
 
-Task::Task(string _name, Time *start, Time *end, string _catagory, string _location, string _description, int _priority) {
+Task::Task(string _name, Time *start, Time *end, string _location, string _description, int _priority) {
     startTime = start;
     endTime = end;
     name = _name;
-    category = _catagory;
     location = _location;
     description = _description;
     priority = _priority;

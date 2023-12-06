@@ -1,24 +1,22 @@
 #include "../header/day.h"
-
+using namespace std;
 Day::Day()
  {
    tasks = new vector<Task>();
     color = 0;
-    name = " ";
-
+    name = "";
  }  
+
 Day::Day(vector<Task> t, int c, string n)
  {
-    tasks = t;
+    tasksVec = tasks;
     color = c;
     name = n;
 
  }
-void Day::createTask(Time start, Time end, string description, string cat, string location, int prio)
-{
-    Task newTask = new Task(start, end, description, cat, location, prio);
-    checkTimeConflict(newTask);
 
+void Day::addTask(Task *t) {
+   tasksVec.push_back(t);
 }
 bool Day::checkTimeConflict(Task T1, Task T2)
 {
@@ -36,6 +34,17 @@ bool Day::checkTimeConflict(Task T1, Task T2)
    }
     
 }
+
+void Day::findColor() {
+
+}
+void Day::printMenu(int taskNum) {
+
+}
+void Day::setName(string) {
+
+}
+
 bool Day::checkConflict(Task t1, Task t2 )
 {
    Time tempStart = T1.getStartTime();

@@ -11,7 +11,6 @@ private:
     Time* startTime;
     Time* endTime;
     string name;
-    string category;
     string location;
     string description;
     int priority;

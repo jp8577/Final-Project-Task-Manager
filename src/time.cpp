@@ -76,3 +76,8 @@ void Time::addMin() {
         }
     }
 }
+
+string Time::getTime() {
+    string time = to_string(getHours()) + ":" + to_string(getMins());
+    return time;
+}
