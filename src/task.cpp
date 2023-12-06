@@ -18,9 +18,6 @@ Time* Task::getStartTime() {
 Time* Task::getEndTime() {
     return endTime;
 }
-string Task::getCategory() {
-    return category;
-}
 string Task::getLocation() {
     return location;
 }
