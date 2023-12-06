@@ -26,19 +26,26 @@ int main() {
     cin >> choice; // Lets user choose option
 
     while (choice != 2) { // While option is not Quit
-        cin >> startHour >> startMinute;
-        cin >> endHour >> endMinute;
-        Time *startTime = new Time(startHour,startMinute,true);
-        Time *endTime = new Time(endHour, endMinute, true);
+        switch(choice) {
+            case 1:
+                cout << "What day would you like to add a task for? " << endl;
 
-        Task *newTask = new Task(startTime, endTime, "Math", "Chung", "Class", 1);
 
-        Day *dec5 = new Day();
-        dec5->addTask(newTask);
 
-        dec5->printTasks();
+            // cin >> startHour >> startMinute;
+            // cin >> endHour >> endMinute;
+            // Time *startTime = new Time(startHour,startMinute,true);
+            // Time *endTime = new Time(endHour, endMinute, true);
 
-        cin >> choice;
+            // Task *newTask = new Task(startTime, endTime, "Math", "Chung", "Class", 1);
+
+            // Day *dec5 = new Day();
+            // dec5->addTask(newTask);
+
+            // dec5->printTasks();
+
+            cin >> choice;
+        }
     }
 
     return 0;

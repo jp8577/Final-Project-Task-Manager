@@ -8,12 +8,14 @@ class Day {
     private:
         int color;
         string name;
+        string month;
+        string day;
         void checkTimeConflict(Time T);
         vector<Task*> tasksVec;
 
     public:
         Day();
-        Day(vector<Task*> tasks, int c, string n);
+        Day(string month, string day, vector<Task*> tasks, int c, string n);
         void addTask(Task *t);
         void printTasks();
         // void findColor();
