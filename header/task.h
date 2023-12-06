@@ -11,14 +11,13 @@ private:
     Time* startTime;
     Time* endTime;
     string name;
-    string category;
     string location;
     string description;
     int priority;
 
 
 public:
-    Task(string _name, Time *start, Time *end, string _catagory, string _location, string _description, int _priority);
+    Task(string _name, Time *start, Time *end, string _location, string _description, int _priority);
     Time* getStartTime();
     Time* getEndTime();
     string getCategory();

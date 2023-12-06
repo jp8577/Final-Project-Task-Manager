@@ -7,11 +7,15 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/lib")
 
 ADD_SUBDIRECTORY(googletest)
 
-# ADD_EXECUTABLE(dayTest
-#     test/dayTest.cpp
-# )
 
 set(SOURCE_FILES src/task.cpp src/time.cpp src/day.cpp )
+set(TEST_FILES test/dayTest.cpp)
 
 add_executable(main src/main.cpp ${SOURCE_FILES})
+
+add_executable(dayTest ${TEST_FILES} ${SOURCE_FILES})
+
+TARGET_LINK_LIBRARIES(dayTest gtest)
+TARGET_COMPILE_DEFINITIONS(dayTest PRIVATE gtest_disable_pthreads=ON)
+
 

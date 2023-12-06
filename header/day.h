@@ -17,9 +17,9 @@ class Day {
         Day();
         Day(vector<Task*> tasks, int c, string n);
         void addTask(Task *t);
-        // void findColor();
-        // void printMenu(int taskNum);
-        // void setName(string);
+        void findColor();
+        void printMenu(int taskNum);
+        void setName(string);
 
         
 };
