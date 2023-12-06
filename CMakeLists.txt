@@ -13,12 +13,5 @@ ADD_SUBDIRECTORY(googletest)
 
 set(SOURCE_FILES src/task.cpp src/time.cpp src/day.cpp )
 
-set(TEST_FILES test/dayTest.cpp)
 add_executable(main src/main.cpp ${SOURCE_FILES})
-# add_executable(dayTest ${TEST_FILES} ${SOURCE_FILES})
-# TARGET_LINK_LIBRARIES(dayTest gtest)
-# TARGET_COMPILE_DEFINITIONS(dayTest PRIVATE gtest_disable_pthreads=ON)
-# ADD_EXECUTABLE(main
-#     src/main.cpp
-# )
 

@@ -21,12 +21,6 @@ void Day::addTask(Task *t) {
 // {
     
 // }
-void Day::printTasks() {
-   int i = 0;
-   for (i = 0; i < tasksVec.size(); ++i) {
-      cout << tasksVec.at(i)->getStartTime().getTime()<< " - " << tasksVec.at(i)->getDescription() << endl;
-   }
-}
 // void Day::findColor();
 // void Day::printMenu(int taskNum);
 // void Day::setName(string);
