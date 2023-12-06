@@ -12,13 +12,14 @@ class Day {
         string day;
         void checkTimeConflict(Time T);
         vector<Task*> tasksVec;
+        bool checkTimeConflict(Task T1, Task T2);
+        bool checkConflict(Task, Task);
 
     public:
         Day();
         Day(vector<Task*> tasks, int c, string n);
         void addTask(Task *t);
         void findColor();
-        void printMenu(int taskNum);
         void setName(string);
 
         

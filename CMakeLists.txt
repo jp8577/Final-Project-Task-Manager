@@ -7,6 +7,10 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/lib")
 
 ADD_SUBDIRECTORY(googletest)
 
+ADD_EXECUTABLE(test
+    test/taskTest.cpp
+    test/monthTest.cpp
+)
 
 set(SOURCE_FILES src/task.cpp src/time.cpp src/day.cpp )
 set(TEST_FILES test/dayTest.cpp)
