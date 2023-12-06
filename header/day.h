@@ -5,7 +5,7 @@
 #define DAY_H
 class Day {
     private:
-        Task[] tasks;
+        //Task[] tasks;
         int color;
         string name;
         void checkTimeConflict(Time T);

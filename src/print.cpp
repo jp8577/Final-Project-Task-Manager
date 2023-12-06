@@ -10,6 +10,21 @@ Print::Print() {
 
 }
 
+void Print::printDay() {
+    
+}
+
+void Print::printMonth(Calendar cal) {
+
+}
+
+void Print::printCalendar(Month* monthPtr) {
+    cout << "---------- " << monthPtr->getMonth() " ----------" << endl;
+    cout << "---------- " << monthPtr->getYear() " ----------" << endl;
+    cout << "Su      M      T      W      Th      F      Sa" << endl; 
+    cout << 
+}   
+
 void Print::printTime(Time* clock) {
     cout << clock->getHours() << ":" << clock->getMins();
     if (!clock->getPm()) {

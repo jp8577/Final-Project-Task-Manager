@@ -1,6 +1,7 @@
 #include "../header/day.h"
 #include "../header/month.h"
 
+
 Month::Month(string month_name, int _year) {
     if (month_name == "January") {
         month_num = 1;
@@ -40,6 +41,14 @@ Month::Month(string month_name, int _year) {
             dayOfWeekIterator = 0;
         }
     }
+}
+
+string Month::getMonth() {
+    return month; 
+}
+
+int Month::getYear() {
+    return year; 
 }
 
 int Month::checkDaysInMonth() {
