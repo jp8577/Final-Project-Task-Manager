@@ -21,7 +21,6 @@ void Print::printTime(Time* clock) {
 
 void Print::printTask(Task* taskPtr) {
     cout << "Name: " << taskPtr->getName() << endl;
-    cout << "Category: " << taskPtr->getCategory() << endl;
     cout << "Time: ";
     printTime(taskPtr->getStartTime());
     cout << " - ";
@@ -29,4 +28,14 @@ void Print::printTask(Task* taskPtr) {
     cout << endl << "Location: " << taskPtr->getLocation() << endl;
     cout << "Description: " << taskPtr->getDescription() << endl;
     cout << "Priority: " << taskPtr->getPriority() << endl;
+}
+
+void Print::DisplayMenu() {
+    cout << "Welcome to our Task Manager, choose what you would like to do: " << endl;
+    cout << "1. View calendar: " << endl;
+    cout << "2. Add a task: " << endl;
+    cout << "3. Edit a task: " << endl;
+    cout << "4. Change Date" << endl;
+    cout << "5. Remove Task: " << endl;
+    cout << "6. Quit " << endl;
 }
