@@ -4,7 +4,7 @@
 Month::Month(string month_name, int _year) {
     if (month_name == "January") {
         month_num = 1;
-    } else if (month_name == "Febuary") {
+    } else if (month_name == "February") {
         month_num = 2;
     } else if (month_name == "March") {
         month_num = 3;
