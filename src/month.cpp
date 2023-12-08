@@ -114,3 +114,7 @@ Month::~Month() {
 Day* Month::getDay(int date) {
     return days[date - 1];
 }
+
+int Month::getYear() {
+    return year;
+}
