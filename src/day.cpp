@@ -10,6 +10,14 @@ Day::Day(string n)
    name = n;
  }
 
+int Day::getTasksAmount() {
+   return tasksVec.size(); 
+}
+
+Task* Day::getTask(int i) {
+   return tasksVec.at(i); 
+}
+
 bool Day::addTask(Task *t) {
    int count = 0;
    Task *temp;

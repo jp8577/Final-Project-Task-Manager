@@ -19,6 +19,8 @@ class Day {
         void setName(string);
         string getName();
         ~Day();
+        int getTasksAmount(); 
+        Task* getTask(int i); 
 
         
 };
