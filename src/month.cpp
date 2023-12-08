@@ -54,6 +54,12 @@ Month::Month(string month_name, int _year) {
     }
 }
 
+Month::~Month() {
+    for (int i = 0; i < numDays; i++) {
+        delete days[i]; 
+    }
+}
+
 int Month::checkDaysInMonth() {
     // jan march may july aug oct dec
     if (month == "January" || month == "March" || month == "May" || month == "July" 
@@ -102,13 +108,6 @@ int Month::checkFirstDay() {
     }
     special_num = special_num % 7;
     return special_num;
-}
-
-Month::~Month() {
-    for (int i = numDays - 1; i > 1; i--) {
-        delete days[i];
-    }
-    delete days[0];
 }
 
 Day* Month::getDay(int date) {

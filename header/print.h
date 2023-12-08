@@ -6,6 +6,7 @@
 class Print {
     public:
         Print();
+        ~Print(); 
         // void printCalendar(Calendar cal);
         void printDay(Day* dayPtr);
         void printMonth(Month* MonthPtr);

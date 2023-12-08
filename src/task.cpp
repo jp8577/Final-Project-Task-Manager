@@ -12,6 +12,11 @@ Task::Task(string _name, Time *start, Time *end, string _location, string _descr
     priority = _priority;
 }
 
+Task::~Task() {
+    delete startTime;
+    delete endTime;
+}
+
 Time* Task::getStartTime() {
     return startTime;
 }
@@ -30,9 +35,4 @@ int Task::getPriority() {
 
 string Task::getName() {
     return name;
-}
-
-Task::~Task() {
-    delete startTime;
-    delete endTime;
 }

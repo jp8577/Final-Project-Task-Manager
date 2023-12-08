@@ -1,5 +1,7 @@
 #include "../header/day.h"
+#include <vector>
 using namespace std;
+
 Day::Day()
  {
     name = "";
@@ -9,6 +11,13 @@ Day::Day(string n)
  {
    name = n;
  }
+
+ Day::~Day() {
+   for (int i = 0; i < tasksVec.size(); i++) {
+      delete tasksVec.at(i);
+   }
+   delete tasksVec; 
+}
 
 int Day::getTasksAmount() {
    return tasksVec.size(); 
@@ -103,16 +112,11 @@ int Day::totMinofDay(Time* t1)
 //    }
 //    return false;
 // }
+
 void Day::setName(string n) {
    name = n;
 }
-string Day::getName()
-{
-   return name;
-}
 
-Day::~Day() {
-   for (int i = 0; i < tasksVec.size(); i++) {
-      delete tasksVec.at(i);
-   }
+string Day::getName() {
+   return name;
 }

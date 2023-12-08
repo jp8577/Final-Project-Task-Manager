@@ -19,6 +19,9 @@ Time::Time(int _hours, int _minutes, bool _pm) {
     pm = _pm;
 }
 
+Time::~Time() {
+}
+
 void Time::setHours(int num) {
     if (isValidHours(num)) {
         hours = num;
