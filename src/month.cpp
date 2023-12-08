@@ -110,3 +110,7 @@ Month::~Month() {
     }
     delete days[0];
 }
+
+Day* Month::getDay(int date) {
+    return days[date - 1];
+}

@@ -21,6 +21,7 @@ class Month {
         int checkDaysInMonth();
         int checkFirstDay();
         bool isLeap();
+        Day* getDay(int date);
         
 };
 

@@ -59,3 +59,8 @@ TEST(MonthTests, isLeap3) {
     bool leap = aMonth->isLeap(); 
     EXPECT_TRUE(leap); 
 }
+
+TEST(monthTests, testGetDay) {
+    Month* monthTester = new Month("January", 2024);
+    EXPECT_EQ(monthTester->getDay(10)->getName(), "Wednesday");
+}
