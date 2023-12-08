@@ -16,6 +16,21 @@ TEST(DayTests, dayConstructor2) {
     ASSERT_EQ(newDay->getName(), "Tuesday");
 }
 
+TEST(DayTests, vectSize1) {
+    Day *newDay = new Day("Monday"); 
+    ASSERT_EQ(newDay->getTasksAmount(), 0);
+}
+
+TEST(DayTests, vectSize2) {
+    Day *newDay = new Day("Tuesday");
+   
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task("Test1", startTime, endTime, "math", "class", 1);
+    bool task = newDay->addTask(newTask); 
+    ASSERT_EQ(newDay->getTasksAmount(), 1); 
+}
+
 TEST(DayTests, addTask) {
     Day *newDay = new Day("Tuesday");
    

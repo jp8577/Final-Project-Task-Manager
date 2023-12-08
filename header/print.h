@@ -6,9 +6,9 @@
 class Print {
     public:
         Print();
-        void printDay(Calendar cal);
-        void printMonth(Month* month); 
-        void printCalendar(Calendar cal); 
+        // void printCalendar(Calendar cal);
+        void printDay(Day* dayPtr);
+        void printMonth(Month* MonthPtr);
         void printTask(Task* taskPtr);
         void printTime(Time* clock); 
         void DisplayMenu();
