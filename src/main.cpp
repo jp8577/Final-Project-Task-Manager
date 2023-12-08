@@ -28,9 +28,6 @@ int main() {
     bool stop = false;
     while (!stop) {
         printer->printMonth(userMonth);
-        // add task
-        // view day
-        // delete task
         cout << "-------------- Menu --------------" << endl;
         cout << "(A)dd task" << endl;
         cout << "(V)iew day" << endl;
