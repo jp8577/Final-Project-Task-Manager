@@ -23,7 +23,9 @@ public:
     bool getPm();
     void addMin();
     string getTime();
-    friend bool operator== (const Time& t1, const Time& t2);
+    
+
+
 };
 
 #endif
