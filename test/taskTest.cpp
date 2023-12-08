@@ -25,8 +25,8 @@ TEST(TaskTests, taskConstructor2) {
 TEST(TaskTests, taskConstructor4) {
     Time *startTime = new Time(4, 30, true);
     Time *endTime = new Time(5, 30, true);
-    Task *newTask = new Task("Test1",startTime, endTime, "math", "class", 1);
-    EXPECT_EQ(newTask->getLocation(), "school");
+    Task *newTask = new Task("Test1",startTime, endTime, "class", "math", 1);
+    EXPECT_EQ(newTask->getLocation(), "class");
 }
 TEST(TaskTests, taskConstructor5) {
     Time *startTime = new Time(4, 30, true);
@@ -46,7 +46,14 @@ TEST(TaskTests, failedTaskConstructor) {
     Time *startTime = new Time(4, 30, true);
     Time *endTime = new Time(5, 30, true);
     Task *newTask = new Task("Test1",startTime, endTime, "math", "class", 1);
-    EXPECT_EQ(newTask->getPriority(), 4);
+    EXPECT_EQ(newTask->getPriority(), 1);
+}
+
+TEST(TaskTests, testDestructor) {
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task("Test1",startTime, endTime, "math", "class", 1);
+    EXPECT_NO_THROW(delete newTask);
 }
 
 TEST(dayTests, testDestructor) {
