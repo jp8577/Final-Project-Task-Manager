@@ -6,6 +6,10 @@ int main(int argc, char **argv) {
   return RUN_ALL_TESTS();
 }
 
+TEST(DayTests, dayConstructor1) {
+    Day *newDay = new Day();
+    ASSERT_EQ(newDay->getName(), "");
+}
 
 
 
