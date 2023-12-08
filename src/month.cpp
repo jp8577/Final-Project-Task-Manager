@@ -4,7 +4,7 @@
 Month::Month(string month_name, int _year) {
     if (month_name == "January") {
         month_num = 1;
-    } else if (month_name == "Febuary") {
+    } else if (month_name == "February") {
         month_num = 2;
     } else if (month_name == "March") {
         month_num = 3;
@@ -30,7 +30,7 @@ Month::Month(string month_name, int _year) {
     month = month_name;
     year = _year;
     numDays = checkDaysInMonth();
-    days = new Day[numDays];
+    days = new Day*[numDays];
     string dayNames[7] = {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
     int dayOfWeekIterator = checkFirstDay();
     for (int i = 0; i < numDays + 1; i++) {
@@ -90,4 +90,16 @@ int Month::checkFirstDay() {
     }
     special_num = special_num % 7;
     return special_num;
+}
+
+Month::~Month() {
+    Day* iterator;
+    for (int i = 0; i < numDays; i++) {
+        iterator = days[i];
+        delete iterator;
+    }
+}
+
+int Month::getOne() {
+    return 1;
 }

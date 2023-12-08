@@ -10,7 +10,7 @@ class Month {
         int month_num;
         int year;
         int numDays;
-        Day* days;
+        Day** days;
 
         int checkDaysInMonth();
         int checkFirstDay();
@@ -18,6 +18,8 @@ class Month {
 
     public:
         Month(string month_name, int _year);
+        int getOne();
+        ~Month();
 
         
 };
