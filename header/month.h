@@ -8,6 +8,7 @@ class Month {
     private:
         string month;
         int month_num;
+        int special_month_num;
         int year;
         int numDays;
         Day** days;
@@ -15,6 +16,8 @@ class Month {
 
     public:
         Month(string month_name, int _year);
+        ~Month();
+  
         int checkDaysInMonth();
         int checkFirstDay();
         bool isLeap();

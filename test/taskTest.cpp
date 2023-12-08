@@ -1,4 +1,5 @@
 #include "gtest/gtest.h"
+#include "../header/month.h"
 #include "../header/day.h"
 #include "../header/task.h"
 #include "../header/time.h"
@@ -48,6 +49,11 @@ TEST(TaskTests, failedTaskConstructor) {
     Time *endTime = new Time(5, 30, true);
     Task *newTask = new Task("Test1",startTime, endTime, "math", "class", 1);
     EXPECT_EQ(newTask->getPriority(), 1);
+}
+
+TEST(MonthTests, testDestructor) {
+    Month* monthTester = new Month("January", 2024);
+    EXPECT_NO_THROW(delete monthTester);
 }
 
 TEST(TaskTests, testDestructor) {
