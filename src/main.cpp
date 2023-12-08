@@ -80,7 +80,6 @@ int main() {
                 cin.ignore(); 
                 getline(cin, location);
                 cout << "Enter description: ";
-                cin.ignore(); 
                 getline(cin, description);
                 cout << "Enter priority: (1-3): ";
                 cin >> priority;
