@@ -10,56 +10,22 @@
   Time management is a common issue for college students so it is important to have an organized timeline when dealing with school, work, and other life events.
 
 * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
-  We plan to do this project in C++ using github to coordinate and use .txt files to save and import dates and events.
+  We plan to do this project in C++ using github to coordinate and use .txt files to save and import dates and events. Google test will be used to test functions in our classes and valgrind to check memory leaks. 
 
 * What will be the input/output of your project?
-  The output of the project will be in a chalendar format in the terminal. There will be menu options and the user will be able to select an option where they can input different tasks.
+  The output of the project will be in a calendar format in the terminal. There will be menu options and the user will be able to select an option where they can input different tasks.
 
 * What are the features that the project provides?
-  Task categories such as school, chores, fun, family, etc. The ability to see the whole month, how many days have tasks, and how busy the days will be. Tasks will have specific times and dates associated with   
-  them to aid in organization.
-
-## Phase II
+  The ability to see the whole month, how many days have tasks, and how busy the days will be. Tasks will have specific times and dates associated with them to aid in organization.
 
 ### Navigation Diagram
 
 ![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/61930673/37e22573-408a-489f-b095-428a161db5b5)
 The Navigation diagram first portrays a calendar of a specific date provided. Then it is placed in a view screen where the calendar month is shown as well as the tasks on a certain day. From the view screen, the user is allowed to go into an edit screen where they are then given an option to either add a task to the date, delete a task, or edit the task that it currently is on. The diagram represents that you are able to travel backward from each screen depending on what the user wants to do.
 
-
-### Screen Layouts
-
-Main menu screen:
-
-![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/94928e92-fe65-41f5-9e1b-2c9e3b3f9178)
-
-View Screen (Displays calendar with options to change tasks for a given day): 
-
-![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/2a7a0867-caf0-4db6-bb5c-baa4464d9e24)
-
-Edit Screen (Prompts user for edits to chosen tasks): 
-
-![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/387ad405-cb42-471d-9472-c9dfeb63c591)
-
-Add Screen (Prompts user for a new task to add): 
-
-![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/530f8172-d15c-4ba6-84bd-8e9b35b32b42)
-
-Delete Screen (Prompts user for a task to delete): 
-
-![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/129914056/28a93e0c-9498-4425-a499-ce7f597543e0)
-
 ## Class Diagram
-
- ![image](https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/61930673/691ff3b7-5e96-4d2a-8c7e-a5288378c786)
-Through the class diagram, we are able to work from the bottom up as certain classes are utilized in the more general classes. Within the Time class, it is only necessary to have the hour and minute variable to keep track of the time and utilize accessors and mutators to be able to change or access these variables. Within the task class, we utilize the time class to create a start and end time for a certain event, and is utilized more within the methods to access the times. The task class is utilized in the day class through an array that lists the tasks for that day. Finally, the month class utilizes the day class within the array of days that pertain to the number of days in the month.
-
-## Phase III
 <img width="653" alt="image" src="https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050/assets/146979512/51b51bc0-cb8e-48b9-9911-3c9083ad57ee">
-
-Updated UML based on the feedback received from the TA.
-
-1)
+Through the class diagram, we are able to work from the bottom up as certain classes are utilized in the more general classes. Within the Time class, it is only necessary to have the hour and minute variable to keep track of the time and utilize accessors and mutators to be able to change or access these variables. Within the task class, we utilize the time class to create a start and end time for a certain event, and is utilized more within the methods to access the times. The task class is utilized in the day class through an array that lists the tasks for that day. Finally, the month class utilizes the day class within the array of days that pertain to the number of days in the month.
 
 ○ What SOLID principle(s) did you apply?
 
@@ -83,7 +49,6 @@ Before the demo, you should do the following:
  ## Screenshots
 Screenshots of the input/output after running your application
  ## Installation/Usage
-Instructions on installing and running your application
 
 For a new user, they would have to clone our repository in order to install and run our application using this link
 https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050. After cloning the repository, they would navigate to 
