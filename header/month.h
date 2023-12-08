@@ -10,7 +10,7 @@ class Month {
         int month_num;
         int year;
         int numDays;
-        Day* days;
+        Day** days;
 
         int checkDaysInMonth();
         int checkFirstDay();
