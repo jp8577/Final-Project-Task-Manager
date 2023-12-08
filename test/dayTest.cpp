@@ -66,3 +66,19 @@ TEST(DayTests, addTask3) {
     Task *newTask2 = new Task("Test2", startTime2, endTime2, "english", "class", 1);
     ASSERT_EQ(newDay->addTask(newTask2), false);
 }
+
+TEST(DayTests, setName) {
+    Day *newDay = new Day();
+    newDay->setName("Monday");
+    ASSERT_EQ(newDay->getName(), "Monday");
+}
+
+TEST(DayTests, getTask1) {
+    Day *newDay = new Day("Tuesday");
+   
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task("Test1", startTime, endTime, "math", "class", 1);
+    bool task = newDay->addTask(newTask); 
+    ASSERT_EQ(newDay->getTask(0), newTask); 
+}
