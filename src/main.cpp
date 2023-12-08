@@ -54,6 +54,7 @@ int main() {
                 string location;
                 string description;
                 int priority;
+                string amOrPm;
 
                 // get user input
                 cout << "Enter task name: ";
@@ -83,9 +84,9 @@ int main() {
                 cout << "Etner priority: ";
                 cin >> priority;
                 
-                Time* startTime = new Time(startHours, startMins, startPm);
-                Time* endTime = new Time(endHours, endMins, endPm);
-                Task* newTask = new Task(taskName, Time *startTime, Time *endTime, location, description, priority);
+                Time* startTime = new Time(startHour, startMins, startPm);
+                Time* endTime = new Time(endHour, endMins, endPm);
+                Task* newTask = new Task(taskName, startTime, endTime, location, description, priority);
                 userMonth->getDay(day)->addTask(newTask);
                 cout << endl << "Task added. Here's a summary." << endl;
                 printer->printTask(newTask);
