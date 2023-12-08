@@ -70,3 +70,8 @@ bool Day::checkConflict(Task* t1, Task* t2 )
    return false;
 }
 
+Day::~Day() {
+   for (int i = 0; i < tasksVec.size(); i++) {
+      delete tasksVec.at(i);
+   }
+}

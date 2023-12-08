@@ -1,4 +1,5 @@
 #include "gtest/gtest.h"
+#include "../header/day.h"
 #include "../header/task.h"
 #include "../header/time.h"
 
@@ -46,4 +47,9 @@ TEST(TaskTests, failedTaskConstructor) {
     Time *endTime = new Time(5, 30, true);
     Task *newTask = new Task("Test1",startTime, endTime, "math", "class", 1);
     EXPECT_EQ(newTask->getPriority(), 4);
+}
+
+TEST(dayTests, testDestructor) {
+    Day* dayTester = new Day("Sunday");
+    EXPECT_NO_THROW(delete dayTester);
 }
