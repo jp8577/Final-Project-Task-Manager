@@ -101,7 +101,3 @@ void Print::printMonth(Month* MonthPtr) {
     }
     cout << endl;
 }
-
-void Print::printDay(Day* day) {
-    
-}
