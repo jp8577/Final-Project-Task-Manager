@@ -21,10 +21,11 @@ class Month {
         int checkDaysInMonth();
         int checkFirstDay();
         bool isLeap();
+        int getNumDays();
         Day* getDay(int date);
         int getYear();
-        int getNumDays();
         string getMonthName();
+
         
 };
 
