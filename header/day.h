@@ -18,6 +18,7 @@ class Day {
         bool addTask(Task *t);
         void setName(string);
         string getName();
+        ~Day();
 
         
 };

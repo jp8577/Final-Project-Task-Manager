@@ -102,3 +102,9 @@ string Day::getName()
 {
    return name;
 }
+
+Day::~Day() {
+   for (int i = 0; i < tasksVec.size(); i++) {
+      delete tasksVec.at(i);
+   }
+}
