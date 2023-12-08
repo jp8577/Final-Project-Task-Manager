@@ -84,6 +84,15 @@ Before the demo, you should do the following:
 Screenshots of the input/output after running your application
  ## Installation/Usage
 Instructions on installing and running your application
+
+For a new user, they would have to clone our repository in order to install and run our application using this link
+https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050. After cloning the repository, they would navigate to 
+the folder and run the command "cmake ." and then after run the command "make". After than they would have to execute the main file
+within the bin folder. After that the application will prompt the user on different options within the task manager. From there, the
+user can decide on what they would like to do with the task manager.
+
  ## Testing
 How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+
+
  

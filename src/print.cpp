@@ -85,6 +85,8 @@ void Print::printMonth(Month* MonthPtr) {
         }
     }
 
+
+
     // we have a counter for what day the first is on (0 for sunday. 1 for monday. etc)
     for (int i = 1; i < MonthPtr->getNumDays() + 1; i++) {
         if (counter == 7) {
