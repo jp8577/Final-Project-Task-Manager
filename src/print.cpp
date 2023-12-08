@@ -10,6 +10,14 @@ Print::Print() {
 
 }
 
+void Print::printDay(Day* dayPtr) {
+    cout << dayPtr->getName() << ":" << endl << endl;
+    for (int i = 0; i < dayPtr->getTasksAmount(); i++) {
+        printTask(dayPtr->getTask(i));
+        cout << endl;  
+    }
+}
+
 void Print::printTime(Time* clock) {
     cout << clock->getHours() << ":";
     if (clock->getMins() < 10) {

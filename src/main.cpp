@@ -81,7 +81,7 @@ int main() {
                 cin >> location;
                 cout << "Enter description: ";
                 cin >> description;
-                cout << "Etner priority: ";
+                cout << "Enter priority: ";
                 cin >> priority;
                 
                 Time* startTime = new Time(startHour, startMins, startPm);
