@@ -23,6 +23,8 @@ class Month {
         bool isLeap();
         Day* getDay(int date);
         int getYear();
+        int getNumDays();
+        string getMonthName();
         
 };
 

@@ -118,3 +118,11 @@ Day* Month::getDay(int date) {
 int Month::getYear() {
     return year;
 }
+
+int Month::getNumDays() {
+    return numDays;
+}
+
+string Month::getMonthName() {
+    return month;
+}
