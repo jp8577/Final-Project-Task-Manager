@@ -47,13 +47,21 @@ It helped minimize confusion around the roles and responsibilities of each class
  
  ## Screenshots
 
-![Alt text](image-1.png)
+Menu View before any action
 
-![Alt text](image-2.png)
+![Menu](images/image-1.png)
 
-![Alt text](image-3.png)
 
-![Alt text](image-4.png)
+Menu View with adding a task to the calendar
+
+![Add TaskOne](images/image-2.png)
+
+![Add TaskTwo](images/image-3.png)
+
+
+Menu View of viewing tasks in a day
+
+![Add TaskThree](images/image-4.png)
 
 
  ## Installation/Usage
