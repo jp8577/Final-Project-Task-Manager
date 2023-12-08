@@ -1,4 +1,5 @@
 #include "gtest/gtest.h"
+#include "../header/day.h"
 #include "../header/task.h"
 #include "../header/time.h"
 
@@ -19,6 +20,13 @@ TEST(TaskTests, taskConstructor2) {
     Time *endTime = new Time(5, 30, true);
     Task *newTask = new Task("Test1", startTime, endTime, "math", "class", 1);
     EXPECT_EQ(newTask->getEndTime()->getHours(),5);
+}
+
+TEST(TaskTests, taskConstructor4) {
+    Time *startTime = new Time(4, 30, true);
+    Time *endTime = new Time(5, 30, true);
+    Task *newTask = new Task("Test1",startTime, endTime, "class", "math", 1);
+    EXPECT_EQ(newTask->getLocation(), "class");
 }
 
 TEST(TaskTests, taskConstructor5) {
@@ -47,4 +55,9 @@ TEST(TaskTests, testDestructor) {
     Time *endTime = new Time(5, 30, true);
     Task *newTask = new Task("Test1",startTime, endTime, "math", "class", 1);
     EXPECT_NO_THROW(delete newTask);
+}
+
+TEST(dayTests, testDestructor) {
+    Day* dayTester = new Day("Sunday");
+    EXPECT_NO_THROW(delete dayTester);
 }
