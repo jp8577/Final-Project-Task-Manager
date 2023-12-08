@@ -16,7 +16,6 @@ Day::Day(string n)
    for (int i = 0; i < tasksVec.size(); i++) {
       delete tasksVec.at(i);
    }
-   delete tasksVec; 
 }
 
 int Day::getTasksAmount() {
