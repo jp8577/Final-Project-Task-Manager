@@ -15,6 +15,7 @@ private:
 
 public:
     Time(int _hours, int _minutes, bool _pm);
+    ~Time(); 
     void setHours(int num);
     void setMins(int num);
     void setPm(bool _pm);

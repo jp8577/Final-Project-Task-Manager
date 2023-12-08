@@ -1,5 +1,3 @@
-// #include "calendar.cpp"
-// #include "day.cpp"
 #include "../header/month.h"
 #include "../header/print.h"
 #include "../header/day.h"
@@ -58,7 +56,8 @@ int main() {
 
                 // get user input
                 cout << "Enter task name: ";
-                cin >> taskName;
+                cin.ignore(); 
+                getline(cin, taskName);
                 cout << "Enter start hour: ";
                 cin >> startHour;
                 cout << "Enter start minutes: ";
@@ -78,10 +77,12 @@ int main() {
                     endPm = true;
                 }
                 cout << "Enter location: ";
-                cin >> location;
+                cin.ignore(); 
+                getline(cin, location);
                 cout << "Enter description: ";
-                cin >> description;
-                cout << "Enter priority: ";
+                cin.ignore(); 
+                getline(cin, description);
+                cout << "Enter priority: (1-3): ";
                 cin >> priority;
                 
                 Time* startTime = new Time(startHour, startMins, startPm);
@@ -102,6 +103,7 @@ int main() {
             stop = true;
         }
     }
-
+    delete printer;
+    delete userMonth;  
     return 0;
 }

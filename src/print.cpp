@@ -7,7 +7,9 @@
 using namespace std;
 
 Print::Print() {
+}
 
+Print::~Print() {
 }
 
 void Print::printDay(Day* dayPtr) {

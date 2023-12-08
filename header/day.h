@@ -14,11 +14,11 @@ class Day {
 
     public:
         Day();
+        ~Day();
         Day(string );
         bool addTask(Task *t);
         void setName(string);
         string getName();
-        ~Day();
         int getTasksAmount(); 
         Task* getTask(int i); 
 
