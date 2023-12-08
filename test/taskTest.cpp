@@ -45,6 +45,5 @@ TEST(TaskTests, failedTaskConstructor) {
 
 TEST(MonthTests, testDestructor) {
     Month* monthTester = new Month("January", 2024);
-    delete monthTester;
-    // EXPECT_NO_THROW(delete monthTester);
+    EXPECT_NO_THROW(delete monthTester);
 }

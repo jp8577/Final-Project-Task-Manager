@@ -4,28 +4,40 @@
 Month::Month(string month_name, int _year) {
     if (month_name == "January") {
         month_num = 1;
+        special_month_num = 0;
     } else if (month_name == "February") {
         month_num = 2;
+        special_month_num = 3;
     } else if (month_name == "March") {
         month_num = 3;
+        special_month_num = 3;
     } else if (month_name == "April") {
         month_num = 4;
+        special_month_num = 6;
     } else if (month_name == "May") {
         month_num = 5;
+        special_month_num = 1;
     } else if (month_name == "June") {
         month_num = 6;
+        special_month_num = 4;
     } else if (month_name == "July") {
         month_num = 7;
+        special_month_num = 6;
     } else if (month_name == "August") {
         month_num = 8;
+        special_month_num = 2;
     } else if (month_name == "September") {
         month_num = 9;
+        special_month_num = 5;
     } else if (month_name == "October") {
         month_num = 10;
+        special_month_num = 0;
     } else if (month_name == "November") {
         month_num = 11;
+        special_month_num = 3;
     } else if (month_name == "December") {
         month_num = 12;
+        special_month_num = 5;
     }
     month = month_name;
     year = _year;
@@ -66,7 +78,7 @@ bool Month::isLeap() {
 }
 
 int Month::checkFirstDay() {
-    int special_num = month_num + 1;
+    int special_num = special_month_num + 1;
     int thousand_counter = 0;
     int _year = year;
     _year -= 2000;
@@ -93,13 +105,8 @@ int Month::checkFirstDay() {
 }
 
 Month::~Month() {
-    Day* iterator;
-    for (int i = 0; i < numDays; i++) {
-        iterator = days[i];
-        delete iterator;
+    for (int i = numDays - 1; i > 1; i--) {
+        delete days[i];
     }
-}
-
-int Month::getOne() {
-    return 1;
+    delete days[0];
 }

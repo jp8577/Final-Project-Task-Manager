@@ -8,6 +8,7 @@ class Month {
     private:
         string month;
         int month_num;
+        int special_month_num;
         int year;
         int numDays;
         Day** days;

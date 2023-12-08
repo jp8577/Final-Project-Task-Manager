@@ -70,3 +70,6 @@ bool Day::checkConflict(Task* t1, Task* t2 )
    return false;
 }
 
+string Day::getName() {
+   return name;
+}
