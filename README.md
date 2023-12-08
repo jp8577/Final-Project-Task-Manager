@@ -47,6 +47,13 @@ Before the demo, you should do the following:
 * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
+ ![Alt text](image.png)
+Menu View before any action
+![Alt text](image-1.png)
+Menu View with adding a task to the calendar
+![Alt text](image-2.png)
+Menu View of viewing a certain task in a day
+
 Screenshots of the input/output after running your application
  ## Installation/Usage
 
