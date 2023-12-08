@@ -49,6 +49,7 @@ It helped minimize confusion around the roles and responsibilities of each class
  
  ## Screenshots
 
+
 ![Alt text](image-1.png)
 
 ![Alt text](image-2.png)
@@ -57,6 +58,7 @@ It helped minimize confusion around the roles and responsibilities of each class
 
 ![Alt text](image-4.png)
 
+Screenshots of the input/output after running your application
  ## Installation/Usage
 
 For a new user, they would have to clone our repository in order to install and run our application using this link https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050. 
