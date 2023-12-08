@@ -45,27 +45,17 @@ The print functions for the Day, Month, Calendar, Task, and Time classes were pl
 
 It helped minimize confusion around the roles and responsibilities of each class and made our code cleaner and more concise.
  
-## Final deliverable
- 
  ## Screenshots
 
-Menu View before any action
-
 ![Alt text](image-1.png)
-
-
-Menu View with adding a task to the calendar
 
 ![Alt text](image-2.png)
 
 ![Alt text](image-3.png)
 
-
-Menu View of viewing tasks in a day
-
 ![Alt text](image-4.png)
 
-Screenshots of the input/output after running your application
+
  ## Installation/Usage
 
 For a new user, they would have to clone our repository in order to install and run our application using this link https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050. 
