@@ -81,7 +81,3 @@ string Time::getTime() {
     string time = to_string(getHours()) + ":" + to_string(getMins());
     return time;
 }
-bool operator== (Time t1, Time t2)
-{
-    return (t1.getHours() == t2.getHours()) && (t1.getMins() == t2.getMins()) && (t1.getPm() == t2.getPm());
-}

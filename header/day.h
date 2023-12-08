@@ -9,7 +9,8 @@ class Day {
         string name;
         vector<Task*> tasksVec;
         bool checkTimeConflict(Task *T1, Task *T2);
-        bool checkConflict(Task*, Task*);
+        int totMinofDay(Time*);
+
 
     public:
         Day();

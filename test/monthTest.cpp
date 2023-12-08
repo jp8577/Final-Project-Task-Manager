@@ -59,3 +59,13 @@ TEST(MonthTests, isLeap3) {
     bool leap = aMonth->isLeap(); 
     EXPECT_TRUE(leap); 
 }
+
+TEST(MonthTests, testGetDay) {
+    Month* monthTester = new Month("January", 2024);
+    EXPECT_EQ(monthTester->getDay(10)->getName(), "Wednesday");
+}
+
+TEST(MonthTests, testGetYear) {
+    Month* monthTester = new Month("December", 2023);
+    EXPECT_EQ(monthTester->getYear(), 2023);
+}

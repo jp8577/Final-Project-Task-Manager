@@ -111,6 +111,18 @@ Month::~Month() {
     delete days[0];
 }
 
+Day* Month::getDay(int date) {
+    return days[date - 1];
+}
+
+int Month::getYear() {
+    return year;
+}
+
 int Month::getNumDays() {
     return numDays;
+}
+
+string Month::getMonthName() {
+    return month;
 }
