@@ -110,3 +110,7 @@ Month::~Month() {
     }
     delete days[0];
 }
+
+int Month::getNumDays() {
+    return numDays;
+}
