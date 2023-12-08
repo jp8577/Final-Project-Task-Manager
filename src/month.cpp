@@ -56,8 +56,9 @@ Month::Month(string month_name, int _year) {
 
 Month::~Month() {
     for (int i = 0; i < numDays; i++) {
-        delete days[i]; 
+        delete days[i];
     }
+    delete[] days;
 }
 
 int Month::checkDaysInMonth() {
