@@ -1,5 +1,4 @@
 // #include "calendar.cpp"
-// #include "day.cpp"
 // #include "month.cpp"
 #include "../header/print.h"
 #include "../header/day.h"
@@ -10,10 +9,18 @@
 using namespace std;
 
 int main() {
+    int choice;
     Print printer = Print();
     
     // Task Manager Start
-    printer.DisplayMenu();
+    printer.displayMenu();
+
+    cin >> choice;
+
+    if (choice == 2) {
+        Task *task = printer.promptAddTask();
+        printer.printTask(task);
+    }
 
     return 0;
 }
