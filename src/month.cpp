@@ -2,40 +2,40 @@
 #include "../header/month.h"
 
 Month::Month(string month_name, int _year) {
-    if (month_name == "January") {
+    if (month_name == "January" || "january") {
         month_num = 1;
         special_month_num = 0;
-    } else if (month_name == "February") {
+    } else if (month_name == "February" || "february") {
         month_num = 2;
         special_month_num = 3;
-    } else if (month_name == "March") {
+    } else if (month_name == "March" || "march") {
         month_num = 3;
         special_month_num = 3;
-    } else if (month_name == "April") {
+    } else if (month_name == "April" || "april") {
         month_num = 4;
         special_month_num = 6;
-    } else if (month_name == "May") {
+    } else if (month_name == "May" || "may") {
         month_num = 5;
         special_month_num = 1;
-    } else if (month_name == "June") {
+    } else if (month_name == "June" || "june") {
         month_num = 6;
         special_month_num = 4;
-    } else if (month_name == "July") {
+    } else if (month_name == "July" || "july") {
         month_num = 7;
         special_month_num = 6;
-    } else if (month_name == "August") {
+    } else if (month_name == "August" || "august") {
         month_num = 8;
         special_month_num = 2;
-    } else if (month_name == "September") {
+    } else if (month_name == "September" || "september") {
         month_num = 9;
         special_month_num = 5;
-    } else if (month_name == "October") {
+    } else if (month_name == "October" || "october") {
         month_num = 10;
         special_month_num = 0;
-    } else if (month_name == "November") {
+    } else if (month_name == "November" || "november") {
         month_num = 11;
         special_month_num = 3;
-    } else if (month_name == "December") {
+    } else if (month_name == "December" || "december") {
         month_num = 12;
         special_month_num = 5;
     }
@@ -45,7 +45,7 @@ Month::Month(string month_name, int _year) {
     days = new Day*[numDays];
     string dayNames[7] = {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
     int dayOfWeekIterator = checkFirstDay();
-    for (int i = 0; i < numDays + 1; i++) {
+    for (int i = 0; i < numDays; i++) {
         days[i] = new Day(dayNames[dayOfWeekIterator]);
         dayOfWeekIterator++;
         if (dayOfWeekIterator > 6) {
