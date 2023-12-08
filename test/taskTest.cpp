@@ -28,6 +28,7 @@ TEST(TaskTests, taskConstructor4) {
     Task *newTask = new Task("Test1",startTime, endTime, "class", "math", 1);
     EXPECT_EQ(newTask->getLocation(), "class");
 }
+
 TEST(TaskTests, taskConstructor5) {
     Time *startTime = new Time(4, 30, true);
     Time *endTime = new Time(5, 30, true);

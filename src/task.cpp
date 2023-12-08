@@ -31,3 +31,8 @@ int Task::getPriority() {
 string Task::getName() {
     return name;
 }
+
+Task::~Task() {
+    delete startTime;
+    delete endTime;
+}
