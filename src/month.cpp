@@ -44,7 +44,6 @@ Month::Month(string month_name, int _year) {
     numDays = checkDaysInMonth();
     days = new Day*[numDays];
     string dayNames[7] = {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
-    cout << "This is the num: " << checkFirstDay() << endl;
     int dayOfWeekIterator = checkFirstDay();
     for (int i = 0; i < numDays; i++) {
         days[i] = new Day(dayNames[dayOfWeekIterator]);
