@@ -87,9 +87,15 @@ int main() {
                 Time* startTime = new Time(startHour, startMins, startPm);
                 Time* endTime = new Time(endHour, endMins, endPm);
                 Task* newTask = new Task(taskName, startTime, endTime, location, description, priority);
-                userMonth->getDay(day)->addTask(newTask);
-                cout << endl << "Task added. Here's a summary." << endl;
-                printer->printTask(newTask);
+                if(userMonth->getDay(day)->addTask(newTask))
+                {
+                    cout << endl << "Task added. Here's a summary." << endl;
+                    printer->printTask(newTask);
+                }
+                else
+                {
+                    cout << endl << "Task wasn't added. There was time conflict." << endl;
+                }
             }
         } else if (userInput == 'V' || userInput == 'v') {
             int day;
