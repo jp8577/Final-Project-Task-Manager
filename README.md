@@ -64,9 +64,9 @@ Menu View of viewing tasks in a day
 ![Add TaskThree](images/image-4.png)
 
 
-Error message
-![Error Message](errorImage.png)
+Error message for time conflicts 
 
+![Error Image](images/errorImage.png)
 
  ## Installation/Usage
 
