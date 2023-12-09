@@ -65,7 +65,7 @@ Menu View of viewing tasks in a day
 
 
 Error message
-![Error Message](errorImage.png)
+![Error Message](images/errorImage.png)
 
 
  ## Installation/Usage
