@@ -49,6 +49,7 @@ bool Day::addTask(Task *t) {
 }
 bool Day::checkTimeConflict(Task  *T1, Task *T2)
 {
+   bool returnVal = true;
    int startTime1 = totMinofDay(T1->getStartTime());
    int endTime1 = totMinofDay(T1->getEndTime());
 
