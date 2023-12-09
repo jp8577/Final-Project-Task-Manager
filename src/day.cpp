@@ -29,7 +29,7 @@ Task* Day::getTask(int i) {
 bool Day::addTask(Task *t) {
    int count = 0;
    Task *temp;
-   bool returnVal = false; 
+   bool returnVal = false;
 
    while(count < tasksVec.size())
    {
@@ -55,7 +55,7 @@ bool Day::checkTimeConflict(Task  *T1, Task *T2)
 
   int startTime2 = totMinofDay(T2->getStartTime());
    int endTime2 = totMinofDay(T2->getEndTime());
-
+   bool returnVal = true; 
    if ((startTime1<= endTime2)&&(endTime1 >= startTime2))
    {
       return returnVal;
