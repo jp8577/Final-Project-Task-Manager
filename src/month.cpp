@@ -2,40 +2,40 @@
 #include "../header/month.h"
 
 Month::Month(string month_name, int _year) {
-    if (month_name == "January" || "january") {
+    if (month_name == "January" || month_name == "january") {
         month_num = 1;
         special_month_num = 0;
-    } else if (month_name == "February" || "february") {
+    } else if (month_name == "February" || month_name == "february") {
         month_num = 2;
         special_month_num = 3;
-    } else if (month_name == "March" || "march") {
+    } else if (month_name == "March" || month_name == "march") {
         month_num = 3;
         special_month_num = 3;
-    } else if (month_name == "April" || "april") {
+    } else if (month_name == "April" || month_name == "april") {
         month_num = 4;
         special_month_num = 6;
-    } else if (month_name == "May" || "may") {
+    } else if (month_name == "May" || month_name == "may") {
         month_num = 5;
         special_month_num = 1;
-    } else if (month_name == "June" || "june") {
+    } else if (month_name == "June" || month_name == "june") {
         month_num = 6;
         special_month_num = 4;
-    } else if (month_name == "July" || "july") {
+    } else if (month_name == "July" || month_name == "july") {
         month_num = 7;
         special_month_num = 6;
-    } else if (month_name == "August" || "august") {
+    } else if (month_name == "August" || month_name == "august") {
         month_num = 8;
         special_month_num = 2;
-    } else if (month_name == "September" || "september") {
+    } else if (month_name == "September" || month_name == "september") {
         month_num = 9;
         special_month_num = 5;
-    } else if (month_name == "October" || "october") {
+    } else if (month_name == "October" || month_name == "october") {
         month_num = 10;
         special_month_num = 0;
-    } else if (month_name == "November" || "november") {
+    } else if (month_name == "November" || month_name == "november") {
         month_num = 11;
         special_month_num = 3;
-    } else if (month_name == "December" || "december") {
+    } else if (month_name == "December" || month_name == "december") {
         month_num = 12;
         special_month_num = 5;
     }
@@ -86,6 +86,7 @@ bool Month::isLeap() {
 
 int Month::checkFirstDay() {
     int special_num = special_month_num + 1;
+    special_num = special_num % 7;
     int thousand_counter = 0;
     int _year = year;
     _year -= 2000;
