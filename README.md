@@ -64,6 +64,10 @@ Menu View of viewing tasks in a day
 ![Add TaskThree](images/image-4.png)
 
 
+Error message
+![Error Message](errorImage.png)
+
+
  ## Installation/Usage
 
 For a new user, they would have to clone our repository in order to install and run our application using this link https://github.com/cs100/final-project-jpark670-nwang078-cmak012-ndo050. 
